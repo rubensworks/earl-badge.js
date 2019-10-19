@@ -25,7 +25,7 @@ export class EarlParser {
       return sum;
     }, 0);
 
-    return { compliance: passed * 100 / assertions.length };
+    return { compliance: passed / assertions.length };
   }
 
 }

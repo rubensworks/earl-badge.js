@@ -28,6 +28,7 @@ export class BadgeGenerator {
     badge = badge.replace(/__HEIGHT__/g, this.height.toString());
     badge = badge.replace(/__LABEL__/g, badgeData.label);
     badge = badge.replace(/__VALUE__/g, badgeData.value);
+    badge = badge.replace(/__VALUE_COLOR__/g, badgeData.valueColor);
     return badge;
   }
 
@@ -36,6 +37,5 @@ export class BadgeGenerator {
 export interface IBadgeData {
   label: string;
   value: string;
-  //labelColor: string;
-  //valueColor: string;
+  valueColor: string;
 }

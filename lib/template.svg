@@ -4,8 +4,8 @@
         <stop offset="1" stop-opacity=".1"/>
     </linearGradient>
     <rect rx="3" width="__WIDTH__" height="__HEIGHT__" fill="#555"/>
-    <rect rx="3" x="__WIDTH_LABEL__" width="__WIDTH_VALUE__" height="__HEIGHT__" fill="#4c1"/>
-    <path fill="#4c1" d="M__WIDTH_LABEL__ 0h4v20h-4z"/>
+    <rect rx="3" x="__WIDTH_LABEL__" width="__WIDTH_VALUE__" height="__HEIGHT__" fill="#__VALUE_COLOR__"/>
+    <path fill="#__VALUE_COLOR__" d="M__WIDTH_LABEL__ 0h4v20h-4z"/>
     <rect rx="3" width="__WIDTH__" height="__HEIGHT__" fill="url(#a)"/>
     <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
         <text x="__LABEL_X__" y="15" fill="#010101" fill-opacity=".3">__LABEL__</text>
