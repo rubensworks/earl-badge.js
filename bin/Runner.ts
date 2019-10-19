@@ -20,9 +20,11 @@ Usage:
 }
 
 (async function run() {
+  // Determine the compliance level from the given EARL file
   const earlParser = new EarlParser();
   const { compliance } = await earlParser.parse(args[1], createReadStream(args[2]), args[2]);
 
+  // Create a badge for the given compliance
   const badgeGenerator = new BadgeGenerator();
   const svg = badgeGenerator.createSvgBadge({
     label: args[0],

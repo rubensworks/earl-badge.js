@@ -1,6 +1,9 @@
 import {readFileSync} from "fs";
 import {join} from "path";
 
+/**
+ * Generates an SVG file for the given data.
+ */
 export class BadgeGenerator {
 
   private readonly widthFactor: number;
@@ -13,6 +16,12 @@ export class BadgeGenerator {
     this.template = readFileSync(join(__dirname, 'template.svg'), 'utf8');
   }
 
+  /**
+   * Create an SVG badge.
+   * Width is determined based on the given label and value.
+   * @param {IBadgeData} badgeData The data to render within the badge.
+   * @returns {string} An SVG string.
+   */
   public createSvgBadge(badgeData: IBadgeData): string {
     let badge = this.template;
 
@@ -35,7 +44,16 @@ export class BadgeGenerator {
 }
 
 export interface IBadgeData {
+  /**
+   * The badge label that will be rendered with a gray background color.
+   */
   label: string;
+  /**
+   * The badge value.
+   */
   value: string;
+  /**
+   * The badge value background color.
+   */
   valueColor: string;
 }
