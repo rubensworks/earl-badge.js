@@ -1,0 +1,7 @@
+{
+  "earl": "http://www.w3.org/ns/earl#",
+  "testSubject": "earl:subject",
+  "testResult": "earl:result",
+  "resultOutcome": "earl:outcome",
+  "failed": "earl:failed"
+}
