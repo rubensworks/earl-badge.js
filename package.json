@@ -1,0 +1,90 @@
+{
+  "name": "earl-badge",
+  "version": "1.0.0",
+  "description": "Creates SVG badges for EARL files.",
+  "keywords": [
+    "earl",
+    "badge",
+    "svg",
+    "rdf",
+    "linked data",
+    "test suite",
+    "w3c"
+  ],
+  "main": "index.js",
+  "typings": "index",
+  "repository": "git@github.com:rubensworks/earl-badge.js.git",
+  "author": "Ruben Taelman <rubensworks@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/rubensworks/earl-badge.js/issues"
+  },
+  "homepage": "https://github.com/rubensworks/earl-badge.js#readme",
+  "license": "MIT",
+  "bin": {
+    "earl-badge": "bin/Runner.js"
+  },
+  "files": [
+    "bin/**/*.d.ts",
+    "bin/**/*.js",
+    "lib/**/*.d.ts",
+    "lib/**/*.js",
+    "lib/**/*.json",
+    "lib/**/*.svg",
+    "index.d.ts",
+    "index.js"
+  ],
+  "pre-commit": [
+    "build",
+    "lint",
+    "test"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/minimist": "^1.2.0",
+    "@types/n3": "^1.0.4",
+    "coveralls": "^3.0.0",
+    "jest": "^24.3.0",
+    "jest-rdf": "^1.3.0",
+    "manual-git-changelog": "^1.0.1",
+    "pre-commit": "^1.2.2",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.8.0",
+    "tslint-eslint-rules": "^5.3.1",
+    "typescript": "^3.0.3"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "test/tsconfig.json"
+      }
+    },
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "testRegex": "(/test/.*|(\\.|/)(test|spec))\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "collectCoverage": true,
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "test": "jest ${1}",
+    "test-watch": "jest ${1} --watch",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "lint": "tslint index.ts lib/**/*.ts test/**/*.ts --exclude '**/*.d.ts'",
+    "build": "tsc",
+    "build-watch": "tsc --watch",
+    "validate": "npm ls",
+    "prepare": "npm run build",
+    "version": "manual-git-changelog onversion"
+  },
+  "dependencies": {
+    "rdf-object": "^1.1.1",
+    "rdf-parse": "^1.2.0"
+  }
+}
