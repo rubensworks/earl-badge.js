@@ -31,8 +31,7 @@
     "lib/**/*.json",
     "lib/**/*.svg",
     "index.d.ts",
-    "index.js",
-    "badge-example.svg"
+    "index.js"
   ],
   "pre-commit": [
     "build",

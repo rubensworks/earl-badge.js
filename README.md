@@ -10,7 +10,7 @@ These badges represent the percentage of passed tests for a specification's test
 
 For example, a badge representing the JSON-LD 1.1 spec compliance could look as follows:
 
-![npm version](badge-example.svg)
+![EARL badge example](https://raw.githubusercontent.com/rubensworks/earl-badge.js/master/badge-example.svg?sanitize=true)
 
 These EARL reports can be generated using a variety of tools in different programming languages,
 such as [rdf-test-suite.js](https://github.com/rubensworks/rdf-test-suite.js).
