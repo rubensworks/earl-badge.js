@@ -30,13 +30,15 @@ export class EarlParser {
 
     // Calculate percentage of succeeded tests
     const passed = assertions.reduce((sum, assertion) => {
-      if (assertion.property.testResult.property.resultOutcome.value !== 'http://www.w3.org/ns/earl#failed') {
+      const testResult = assertion.property.testResult;
+      const resultOutcome = testResult ? testResult.property.resultOutcome : null;
+      if (resultOutcome && resultOutcome.value !== 'http://www.w3.org/ns/earl#failed') {
         return sum + 1;
       }
       return sum;
     }, 0);
 
-    return { compliance: passed / assertions.length };
+    return { compliance: assertions.length > 0 ? passed / assertions.length : 0 };
   }
 
 }
