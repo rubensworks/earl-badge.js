@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/rubensworks/earl-badge.js.svg?branch=master)](https://travis-ci.org/rubensworks/earl-badge.js)
 [![Coverage Status](https://coveralls.io/repos/github/rubensworks/earl-badge.js/badge.svg?branch=master)](https://coveralls.io/github/rubensworks/earl-badge.js?branch=master)
-[![npm version](https://badge.fury.io/js/earl-badge.svg)](https://www.npmjs.com/package/earl-badge) [![Greenkeeper badge](https://badges.greenkeeper.io/rubensworks/earl-badge.js.svg)](https://greenkeeper.io/)
+[![npm version](https://badge.fury.io/js/earl-badge.svg)](https://www.npmjs.com/package/earl-badge)
 
 This tool creates SVG badges for [EARL](https://www.w3.org/TR/EARL10-Schema/) test reports,
 for representing the specification compliance of a certain tool.
