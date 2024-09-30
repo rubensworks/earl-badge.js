@@ -92,6 +92,6 @@
   },
   "dependencies": {
     "rdf-object": "^2.0.0",
-    "rdf-parse": "^1.2.0"
+    "rdf-parse": "^3.0.0"
   }
 }
