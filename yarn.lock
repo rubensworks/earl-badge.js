@@ -613,6 +613,13 @@
   dependencies:
     "@types/rdf-js" "^2.0.1"
 
+"@rdfjs/types@*":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@rdfjs/types/-/types-1.1.2.tgz#9c2f9848c44c26d383bed2a808571de3b93b808d"
+  integrity sha512-wqpOJK1QCbmsGNtyzYnojPU8gRDPid2JO0Q0kMtb4j65xhCK880cnKAfEOwC+dX85VJcCByQx5zOwyyfCjDJsg==
+  dependencies:
+    "@types/node" "*"
+
 "@sinonjs/commons@^1.7.0":
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.7.1.tgz#da5fd19a5f71177a53778073978873964f49acf1"
@@ -722,6 +729,13 @@
   version "13.1.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.1.7.tgz#db51d28b8dfacfe4fb2d0da88f5eb0a2eca00675"
   integrity sha512-HU0q9GXazqiKwviVxg9SI/+t/nAsGkvLDkIdxz+ObejG2nX6Si00TeLqHMoS+a/1tjH7a8YpKVQwtgHuMQsldg==
+
+"@types/node@^18.0.0":
+  version "18.19.54"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.54.tgz#f1048dc083f81b242640f04f18fb3e4ccf13fcdb"
+  integrity sha512-+BRgt0G5gYjTvdLac9sIeE0iZcJxi4Jc4PV5EUzqi+88jmQLr+fRZdv2tCTV7IHKSGxM6SaLoOXQWWUiLUItMw==
+  dependencies:
+    undici-types "~5.26.4"
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -2706,12 +2720,22 @@ json5@2.x, json5@^2.1.0:
   dependencies:
     minimist "^1.2.0"
 
-jsonld-context-parser@^1.1.0, jsonld-context-parser@^1.3.3:
+jsonld-context-parser@^1.3.3:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/jsonld-context-parser/-/jsonld-context-parser-1.3.4.tgz#289f0b05bd3ec3753535ffdf48de36dba7776521"
   integrity sha512-mR2uoEWqFLE1PrF1pbUuppKajHSGwodXtI9hlcpKflvolDEFAh4hd7z9874pWaK+TtQfHC3Xqfk0U8SEnt2htw==
   dependencies:
     isomorphic-fetch "^2.2.1"
+    relative-to-absolute-iri "^1.0.5"
+
+jsonld-context-parser@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/jsonld-context-parser/-/jsonld-context-parser-3.0.0.tgz#43992862fc3eabcee9940cf4c44bb2b0dbe2542c"
+  integrity sha512-Kg6TVtBUdIm057ht/8WNhM9BROt+BeYaDGXbzrKaa3xA99csee+CsD8IMCTizRgzoO8PIzvzcxxCoRvpq1xNQw==
+  dependencies:
+    "@types/http-link-header" "^1.0.1"
+    "@types/node" "^18.0.0"
+    http-link-header "^1.0.2"
     relative-to-absolute-iri "^1.0.5"
 
 jsonld-streaming-parser@^1.1.0:
@@ -3489,6 +3513,13 @@ quick-lru@^1.0.0:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-1.1.0.tgz#4360b17c61136ad38078397ff11416e186dcfbb8"
   integrity sha1-Q2CxfGETatOAeDl/8RQW4Ybc+7g=
 
+rdf-data-factory@^1.1.0:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/rdf-data-factory/-/rdf-data-factory-1.1.2.tgz#d47550d2649d0d64f8cae3fcc9efae7a8a895d9a"
+  integrity sha512-TfQD63Lokabd09ES1jAtKK8AA6rkr9rwyUBGo6olOt1CE0Um36CUQIqytyf0am2ouBPR0l7SaHxCiMcPGHkt1A==
+  dependencies:
+    "@rdfjs/types" "*"
+
 rdf-isomorphic@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/rdf-isomorphic/-/rdf-isomorphic-1.1.0.tgz#d39cef145133ddff476c49c4ccb102f172685433"
@@ -3497,14 +3528,15 @@ rdf-isomorphic@^1.1.0:
     rdf-string "^1.3.1"
     rdf-terms "^1.4.0"
 
-rdf-object@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/rdf-object/-/rdf-object-1.1.1.tgz#3c80e994d6edc4d6fce8cb09b697bc8cdcacba8d"
-  integrity sha512-60YdkQ4rgetCEcDu4XqRiTuSIJwJw0Dok48FhSU0t9dCfsHMuOuethbdNqFhVNmjFlB6bD58zc+ibmV+g2o24A==
+rdf-object@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/rdf-object/-/rdf-object-2.0.0.tgz#74551eac1356f0e1ecdc6c632e637f996d17c3ad"
+  integrity sha512-QeSaNt/I0DfYvOC3/EBbZ9aYb1wX1fqc0JUKMAR2gpIE99eWn7+N8dE8Z7a7kIM5tr/w7zvrO710gYs9yvaM9A==
   dependencies:
-    "@rdfjs/data-model" "^1.1.1"
-    jsonld-context-parser "^1.1.0"
-    rdf-string "^1.3.1"
+    "@rdfjs/types" "*"
+    jsonld-context-parser "^3.0.0"
+    rdf-data-factory "^1.1.0"
+    rdf-string "^1.6.0"
     streamify-array "^1.0.1"
 
 rdf-parse@^1.2.0:
@@ -3536,6 +3568,14 @@ rdf-string@^1.3.1:
   integrity sha512-Pcw6aZRfto2cZodK5kSqFZW8mz6nfKLxSfjOSrTi5ajb2CSIwzqGx7UniysgKoV2i7tQL5dpPgCgY80upCiRUw==
   dependencies:
     "@rdfjs/data-model" "^1.1.1"
+
+rdf-string@^1.6.0:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/rdf-string/-/rdf-string-1.6.3.tgz#5c3173fad13e6328698277fb8ff151e3423282ab"
+  integrity sha512-HIVwQ2gOqf+ObsCLSUAGFZMIl3rh9uGcRf1KbM85UDhKqP+hy6qj7Vz8FKt3GA54RiThqK3mNcr66dm1LP0+6g==
+  dependencies:
+    "@rdfjs/types" "*"
+    rdf-data-factory "^1.1.0"
 
 rdf-terms@^1.4.0:
   version "1.5.1"
@@ -4420,6 +4460,11 @@ typescript@^4.0.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.2.tgz#6369ef22516fe5e10304aae5a5c4862db55380e9"
   integrity sha512-thGloWsGH3SOxv1SoY7QojKi0tc+8FnOmiarEGMbd/lar7QOEd3hvlx3Fp5y6FlDUGl9L+pd4n2e+oToGMmhRQ==
+
+undici-types@~5.26.4:
+  version "5.26.5"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
+  integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
 union-value@^1.0.0:
   version "1.0.1"
