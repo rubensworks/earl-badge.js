@@ -91,7 +91,7 @@
     "version": "manual-git-changelog onversion"
   },
   "dependencies": {
-    "rdf-object": "^2.0.0",
+    "rdf-object": "^3.0.0",
     "rdf-parse": "^1.2.0"
   }
 }
