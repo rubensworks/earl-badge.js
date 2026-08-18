@@ -1,5 +1,5 @@
 import {RdfObjectLoader, Resource} from "rdf-object";
-import rdfParser from "rdf-parse";
+import {rdfParser} from "rdf-parse";
 import {Readable} from "stream";
 
 /**
